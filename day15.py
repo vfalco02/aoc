@@ -1,13 +1,6 @@
 nums = [12, 1, 16, 3, 11, 0]
 tracker = {nums[i]: (i, 0, True) for i in range(len(nums))}
 
-# tracker = {
-#     0: (0, 0, True),
-#     3: (1, 0, True),
-#     6: (2, 0, True)
-# }
-
-
 for i in range(len(nums), 30000000):
     if tracker[nums[i-1]][2] == True:
         nums.append(0)
